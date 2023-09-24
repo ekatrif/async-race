@@ -1,0 +1,42 @@
+button {
+  font-size: 1rem;
+  font-family: Vt323, sans-serif;
+  font-weight: 400;
+  border-width: 1px 1px 3px;
+  border-style: solid;
+  background-color: $btn-background;
+  cursor: pointer;
+  transition: all 0.5s linear;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  nav > & {
+    border-color: $nav;
+  }
+
+  .controls & {
+    border-color: $controls;
+  }
+
+  .car__header > & {
+    border-color: $carHeader;
+  }
+
+  &.car__start {
+    border-color: $carStart;
+  }
+
+  &.car__stop {
+    border-color: $carStop;
+  }
+
+  .pagination > & {
+    border-color: lightblue;
+  }
+
+  &[disabled="true"] {
+    border-color: $gray;
+  }
+}

@@ -1,0 +1,37 @@
+import { Settings } from './types';
+
+const CLASSES: Settings = {
+  toGarage: 'to-garage',
+  toWinners: 'to-winners',
+  hidden: 'hidden',
+  carsContainer: 'cars',
+  carContainer: 'car',
+  carHeader: 'car__header',
+  carTitle: 'car__title',
+  carImage: 'car__image',
+  carFlag: 'car__flag',
+  carName: 'car-name',
+  carBody: 'car__body',
+  create: 'button-create',
+  update: 'button-update',
+  race: 'button-race',
+  reset: 'button-reset',
+  generateCars: 'button-generate',
+  select: 'button-select',
+  remove: 'button-remove',
+  pagination: 'pagination',
+  carStart: 'car__start',
+  carStop: 'car__stop',
+  winMessage: 'winmessage',
+  table: 'table',
+  prevBtn: 'button-prev',
+  nextBtn: 'button-next',
+  errorCreate: 'error-create',
+  errorUpdate: 'error-update',
+  controls: 'controls',
+  main: 'main',
+  cars: 'cars',
+  winners: 'winners',
+};
+
+export default CLASSES;

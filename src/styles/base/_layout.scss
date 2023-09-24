@@ -1,0 +1,113 @@
+#app {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 2em;
+  }
+}
+
+nav {
+  display: flex;
+
+  & > * + * {
+    margin-left: 0.7em;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 2em;
+  }
+
+  @media (max-width: 768px) {
+    & > * + * {
+      margin-top: 1em;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 1em;
+  }
+
+  & > .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 0.7em;
+    }
+  }
+}
+
+.cars {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 2em;
+  }
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px dashed $white;
+
+  & > * + * {
+    margin-top: 0.5em;
+  }
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+
+    & > * + * {
+      margin-left: 0.7em;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;;
+    color: $title;
+  }
+
+  &__body {
+    display: flex;
+    align-items: baseline;
+
+    & > * + * {
+      margin-left: 0.7em;
+    }
+
+    & > button {
+      align-self: flex-start;
+    }
+  }
+
+  &__image {
+    
+    & > svg {
+      width: 6em;
+    }
+  }
+
+  &__flag {
+    margin-left: auto;
+    margin-right: 6em;
+
+    & > img {
+      width: 2em;
+    }
+  }
+}
+

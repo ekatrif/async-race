@@ -1,0 +1,25 @@
+.table {
+
+  & th {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  & td {
+    font-size: 1.2rem;
+    padding: 1em 2em;
+  }
+
+  @media (max-width: 768px) {
+    & td{
+      font-size: 1rem;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+#winner-id,
+#winner-wins,
+#winner-time {
+  cursor: pointer;
+}
